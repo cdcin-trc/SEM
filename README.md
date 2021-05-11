@@ -11,7 +11,7 @@ Before using the cdcin-trc/SEM software models and visualisation, ensure you:
 2 - Set up the modelling environment (MEDEA) following instructions from https://github.com/cdit-ma/SEM
   - for now, you can ignore the worker definitions. This is discussed further below
 
-Once this is done,
+Once teh steps above are completed,
 
 3 - Set up visualisation environment using the "medeaviz" tool.
 
@@ -23,19 +23,19 @@ Once this is done,
 
 6 - If you have changed the /medeaworkers/deployment/CMakeLists.txt, commit and push the changes via git. This is needed for Jenkins in the next step
 
-6b - configure your local graphml worker definitions according to that
+7 - configure your local graphml worker definitions according to that
 
-7 - Execute the Jenkins deploy_worker job to compile the workers
+8 - Execute the Jenkins deploy_worker job to compile the workers
 
-8 - Execute the Scenario Manager
+9 - Execute the Scenario Manager
   - this runs as a MEDEA model, so execute this from within MEDEA
   - if successful, you should see state updates in the MEDEA console, depending on your log verbosity level
 
-9 - Execute the medeaviz visualiser
+10 - Execute the medeaviz visualiser
   - if successful, you should see:
     - a visual state update, showing surface/subsurface "contacts" moving, and the clock increasing
 
-10 - Execute models
+<b>11</b> - Execute models
 
-11 - Ensure the models are working by looking at the console or medeaviz
+12 - Ensure the models are working by looking at the console or medeaviz
 
