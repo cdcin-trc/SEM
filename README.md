@@ -4,38 +4,52 @@ This repository contains sample models and visualisation software intended for u
 
 https://github.com/cdit-ma/SEM
 
-Before using the cdcin-trc/SEM software models and visualisation, ensure you:
+<H2>Step 1</H2>
+Set up the backend environment (re/Jenkins) following instructions from https://github.com/cdit-ma/SEM
 
-1 - Set up the backend environment (re/Jenkins) following instructions from https://github.com/cdit-ma/SEM
+<H2>Step 2</H2>
+Set up the modelling environment (MEDEA) following instructions from https://github.com/cdit-ma/SEM
 
-2 - Set up the modelling environment (MEDEA) following instructions from https://github.com/cdit-ma/SEM
-  - for now, you can ignore the worker definitions. This is discussed further below
 
-Once teh steps above are completed,
+For now, you can ignore the worker definitions. This is discussed further below
 
-3 - Set up visualisation environment using the "medeaviz" tool.
+<H2>Step 3</H2>
+Set up visualisation environment using the "medeaviz" tool.
 
-4 - Decide which MEDEA models you want to deploy
+<H2>Step 4</H2>
+Decide which MEDEA models you want to deploy
 
-5 - Determine which "workers" are needed for these models
+<H2>Step 5</H2>
+Determine which "workers" are needed for these models
 
-5 - Configure the /medeaworkers/deployment/CMakeLists.txt file, commenting out workers you do not want to deploy, leaving only the workers to deploy
+<H2>Step 6</H2>
+Configure the /medeaworkers/deployment/CMakeLists.txt file, commenting out workers you do not want to deploy, leaving only the workers to deploy
 
-6 - If you have changed the /medeaworkers/deployment/CMakeLists.txt, commit and push the changes via git. This is needed for Jenkins in the next step
+<H2>Step 7</H2>
+If you have changed the /medeaworkers/deployment/CMakeLists.txt, commit and push the changes via git. This is needed for Jenkins in the next step
 
-7 - configure your local graphml worker definitions according to that
+<H2>Step 8</H2>
+Configure your local graphml worker definitions according to that
 
-8 - Execute the Jenkins deploy_worker job to compile the workers
+<H2>Step 9</H2>
+Execute the Jenkins deploy_worker job to compile the workers
 
-9 - Execute the Scenario Manager
-  - this runs as a MEDEA model, so execute this from within MEDEA
-  - if successful, you should see state updates in the MEDEA console, depending on your log verbosity level
+<H2>Step 10</H2>
+Execute the Scenario Manager
 
-10 - Execute the medeaviz visualiser
-  - if successful, you should see:
-    - a visual state update, showing surface/subsurface "contacts" moving, and the clock increasing
+<p>This runs as a MEDEA model, so execute this from within MEDEA
 
-<b>11</b> - Execute models
+- if successful, you should see state updates in the MEDEA console, depending on your log verbosity level
 
-12 - Ensure the models are working by looking at the console or medeaviz
+<H2>Step 11</H2>
+Execute the medeaviz visualiser
+
+- if successful, you should see:
+  - a visual state update, showing surface/subsurface "contacts" moving, 
+  - and the clock increasing
+
+<H2>Step 12</H2>
+Execute models
+
+<H2>Step 13</H2>Ensure the models are working by looking at the console or medeaviz
 
