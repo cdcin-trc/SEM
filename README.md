@@ -7,6 +7,7 @@ https://github.com/cdit-ma/SEM
 Before using the cdcin-trc/SEM software models and visualisation, ensure you:
 
 1 - Set up the backend environment (re/Jenkins) following instructions from https://github.com/cdit-ma/SEM
+
 2 - Set up the modelling environment (MEDEA) following instructions from https://github.com/cdit-ma/SEM
   - for now, you can ignore the worker definitions. This is discussed further below
 
