@@ -3,7 +3,7 @@ Models for System Execution Modelling software
 https://github.com/cdit-ma/SEM
 
 instructions:
--setup backend environment via CDIT repo
+- setup backend environment via CDIT repo
 -setup modelling environment via CDIT repo
   -leave the worker definitions for now
 -set up visualisatio environment
