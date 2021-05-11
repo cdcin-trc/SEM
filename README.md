@@ -8,6 +8,8 @@ instructions:
   - leave the worker definitions for now
 - set up visualisatio environment
   - medeaviz
+- setup jenkins task deploy_worker  
+  - obtained from https://github.com/cdcin-trc/SEM
 - set up working models:
   - scenario manager
      - ensure it's working via medeaviz
