@@ -4,52 +4,54 @@ This repository contains sample models and visualisation software intended for u
 
 https://github.com/cdit-ma/SEM
 
-<H2>Step 1</H2>
+<H2>Installation and Configuration Instructions</H2>
+
+<H3>Step 1</H3>
 Set up the backend environment (re/Jenkins) following instructions from https://github.com/cdit-ma/SEM
 
-<H2>Step 2</H2>
+<H3>Step 2</H3>
 Set up the modelling environment (MEDEA) following instructions from https://github.com/cdit-ma/SEM
 
 
 For now, you can ignore the worker definitions. This is discussed further below
 
-<H2>Step 3</H2>
+<H3>Step 3</H3>
 Set up visualisation environment using the "medeaviz" tool.
 
-<H2>Step 4</H2>
+<H3>Step 4</H3>
 Decide which MEDEA models you want to deploy
 
-<H2>Step 5</H2>
+<H3>Step 5</H3>
 Determine which "workers" are needed for these models
 
-<H2>Step 6</H2>
+<H3>Step 6</H3>
 Configure the /medeaworkers/deployment/CMakeLists.txt file, commenting out workers you do not want to deploy, leaving only the workers to deploy
 
-<H2>Step 7</H2>
+<H3>Step 7</H3>
 If you have changed the /medeaworkers/deployment/CMakeLists.txt, commit and push the changes via git. This is needed for Jenkins in the next step
 
-<H2>Step 8</H2>
+<H3>Step 8</H3>
 Configure your local graphml worker definitions according to that
 
-<H2>Step 9</H2>
+<H3>Step 9</H3>
 Execute the Jenkins deploy_worker job to compile the workers
 
-<H2>Step 10</H2>
+<H3>Step 10</H3>
 Execute the Scenario Manager
 
 <p>This runs as a MEDEA model, so execute this from within MEDEA
 
 - if successful, you should see state updates in the MEDEA console, depending on your log verbosity level
 
-<H2>Step 11</H2>
+<H3>Step 11</H3>
 Execute the medeaviz visualiser
 
 - if successful, you should see:
   - a visual state update, showing surface/subsurface "contacts" moving, 
   - and the clock increasing
 
-<H2>Step 12</H2>
+<H3>Step 12</H3>
 Execute models
 
-<H2>Step 13</H2>Ensure the models are working by looking at the console or medeaviz
+<H3>Step 13</H3>Ensure the models are working by looking at the console or medeaviz
 
