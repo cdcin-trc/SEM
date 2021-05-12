@@ -70,10 +70,12 @@ Note: you should only need to perform this step once.
 <H4> Step 9.2 </H4>
 Execute the Jenkins deploy_worker job to compile the workers. This step should be repeated whenever you make changes to any of the workers in your git repo.
 
-<H3>Step 10</H3>
-Execute the Scenario Manager
+<H3>Step 10Execute the Scenario Manager</H3>
 
-<p>This runs as a MEDEA model, so execute this from within MEDEA
+
+This runs as a MEDEA model, so execute this from within MEDEA
+- you will need to point MEDEA at your jenkins environment
+- you will also need to 
 
 - if successful, you should see state updates in the MEDEA console, depending on your log verbosity level
 
