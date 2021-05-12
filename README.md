@@ -47,27 +47,28 @@ Determine which "workers" are needed for these models
   - ScenarioManager
   - AdaptiveSwarmOptimisedPartocleFilterWorker
 
-<H3>Step 6</H3>
+<H3>Step 6 - Update CMakeLists</H3>
 Configure the /medeaworkers/deployment/CMakeLists.txt file, commenting out workers you do not want to deploy, leaving only the workers to deploy
 
-<H3>Step 7</H3>
-If you have changed the /medeaworkers/deployment/CMakeLists.txt, commit and push the changes via git. This is needed for Jenkins in the next step
+<H3>Step 7 - Push to git</H3>
+If you have changed the /medeaworkers/deployment/CMakeLists.txt, commit and push the changes via git to your repositry. This is needed for Jenkins in the next step
 
-<H3>Step 8</H3>
-Configure your local graphml worker definitions according to that
+<H3>Step 8 - Update Local  Worker Definition Files</H3>
+Medea may be extended to recognize custom workes, by adding worker definition files into its local instalation. This step is not strictly necesary, but is highly recomended.
+Configure your local graphml worker definitions, and copy them to the Medea Istalation Dierctory.
 
-<H3>Step 9</H3>
+<H3>Step 9 - Deploy The Workers</H3>
 <H4> Step 9.1 </H4>
 Configure jenkins to add the deploy_worker task. 
 
 - copy the file SEM/jenkins/deploy_workers.groovy to the jenkinns server.
-
 - create a jenkins task
+- point the task at your medea workers git repo
 
-- TODO how do we point this at the SEM git repo.
+Note: you should only need to perform this step once.
 
 <H4> Step 9.2 </H4>
-Execute the Jenkins deploy_worker job to compile the workers
+Execute the Jenkins deploy_worker job to compile the workers. This step should be repeated whenever you make changes to any of the workers in your git repo.
 
 <H3>Step 10</H3>
 Execute the Scenario Manager
@@ -76,7 +77,7 @@ Execute the Scenario Manager
 
 - if successful, you should see state updates in the MEDEA console, depending on your log verbosity level
 
-<H3>Step 11</H3>
+<H3>Step 11 - Run Medeaviz</H3>
 Execute the medeaviz visualiser
 
 - if successful, you should see:
