@@ -21,6 +21,8 @@ Set up visualisation environment using the "medeaviz" tool.
 <H3>Step 4</H3>
 Decide which MEDEA models you want to deploy
 
+Note: The Adaptive Swarm Optimized Particle Filter is included to demonstrate some advanced capabilities, and should not be used in your first experiment.
+
 <H3>Step 5</H3>
 Determine which "workers" are needed for these models
 
