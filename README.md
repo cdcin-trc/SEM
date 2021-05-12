@@ -67,3 +67,14 @@ Execute models
 
 <H3>Step 13</H3>Ensure the models are working by looking at the console or medeaviz
 
+<H3> Step 14 </H4>
+This is an optional step if you wish to attempt to run some of the advanced modesl such as the Adaptive Swarm Optimized Particle Filter. These models make use of heavily optimized libraries like blas and fftw, as well as their GPU equivalents cufft and cublas; to allow reliable comparison bewteen cpu and gpu performance. 
+
+Before executing these models you must install the third party libraries
+
+- http://math-atlas.sourceforge.net/
+- https://developer.nvidia.com/cufft
+- http://www.fftw.org/download.html
+- https://developer.nvidia.com/cufft
+
+and update the CMakeList files to referfence where you have installed them, before rebuilding the workers.
