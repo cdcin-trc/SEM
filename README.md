@@ -34,6 +34,9 @@ If you have changed the /medeaworkers/deployment/CMakeLists.txt, commit and push
 Configure your local graphml worker definitions according to that
 
 <H3>Step 9</H3>
+<H4> Step 9.1 </H4>
+Configure jenkins to add the deploy_worker task. 
+<H4> Step 9.2 </H4>
 Execute the Jenkins deploy_worker job to compile the workers
 
 <H3>Step 10</H3>
