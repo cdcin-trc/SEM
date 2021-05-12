@@ -6,24 +6,28 @@ https://github.com/cdit-ma/SEM
 
 <H2>Installation and Configuration Instructions</H2>
 
-<H3>Step 1</H3>
+<H3>Step 1 - Set up the RE / Jenkins Backend Environment</H3>
 Set up the backend environment (re/Jenkins) following instructions from https://github.com/cdit-ma/SEM
 
-<H3>Step 2</H3>
+<H3>Step 2 - Set up MEDEA </H3>
 Set up the modelling environment (MEDEA) following instructions from https://github.com/cdit-ma/SEM
-
 
 For now, you can ignore the worker definitions. This is discussed further below
 
-<H3>Step 3</H3>
+<H3>Step 3 - Setup MEDEAVIZ </H3>
 Set up visualisation environment using the "medeaviz" tool.
 
-<H3>Step 4</H3>
+<H3>Step 4 - Select Models </H3>
+Three models have been provided
+- An Optronics Model
+- An ESM Model
+- A Particle FIletr based Tracking Algorithm 
+
 Decide which MEDEA models you want to deploy
 
 Note: The Adaptive Swarm Optimized Particle Filter is included to demonstrate some advanced capabilities, and should not be used in your first experiment.
 
-<H3>Step 5</H3>
+<H3>Step 5 - Install Custom Workers</H3>
 Determine which "workers" are needed for these models
 
 <H3>Step 6</H3>
