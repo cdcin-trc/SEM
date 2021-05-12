@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns">
+    <key attr.name="kind" attr.type="string" for="all" id="kind"/>
+    <key attr.name="label" attr.type="string" for="all" id="label"/>
+	<key attr.name="index" attr.type="int" for="all" id="index"/>
+
+    <key attr.name="value" attr.type="string" for="all" id="value"/>
+    <key attr.name="type" attr.type="string" for="all" id="type"/>
+    <key attr.name="inner_type" attr.type="string" for="all" id="inner_type"/>
+    <key attr.name="outer_type" attr.type="string" for="all" id="outer_type"/>
+
+    <key attr.name="description" attr.type="string" for="all" id="description"/>
+
+    <key attr.name="worker" attr.type="string" for="all" id="worker"/>
+    <key attr.name="folder" attr.type="string" for="all" id="folder"/>
+    <key attr.name="file" attr.type="string" for="all" id="file"/>
+    <key attr.name="icon" attr.type="string" for="all" id="icon"/>
+    <key attr.name="icon_prefix" attr.type="string" for="all" id="icon_prefix"/>
+    <key attr.name="operation" attr.type="string" for="all" id="operation"/>
+    <key attr.name="workerID" attr.type="string" for="all" id="workerID"/>
+    <key attr.name="version" attr.type="string" for="all" id="version"/>
+
+    <graph id="G">
+        <node id="optronicsworker">
+            <data key="kind">Class</data>
+            <data key="version">1.0.0</data>
+            <data key="worker">OptronicsWorker</data>
+            <data key="label">OptronicsWorker</data>
+            <data key="description">Some description</data>
+            <data key="icon_prefix">Icons</data>
+            <data key="icon">cpu</data>
+            <data key="folder">/home/cdit-ma/cdcin/optronicsworker</data>
+            <data key="file">optronicsworker</data>
+            <graph id="optronicsworker:">
+			
+			    <node id="optronicsworker::init">			
+                    <data key="kind">Function</data>
+                    <data key="label">Add Object to Image</data>
+                    <data key="operation">init</data>
+                    <data key="description">TODO</data>
+                    <data key="icon_prefix">Icons</data>
+                    <data key="icon">cpu</data>
+                    <graph id="optronicsworker::init:">
+					    <node id="optronicsworker::init::in">
+                            <data key="kind">InputParameterGroup</data>
+                            <graph id="optronicsworker::init::in:">    
+								<node id="optronicsworker::init::in::dist">
+									<data key="index">0</data>
+                                    <data key="kind">Member</data>
+                                    <data key="label">dist</data>
+                                    <data key="inner_type">Double</data>
+                                    <data key="icon_prefix">Icons</data>
+                                    <data key="icon">clockCycle</data>
+                                    <data key="description">TODO</data>
+                                </node>	
+   
+								<node id="optronicsworker::init::in::angle">
+									<data key="index">1</data>
+                                    <data key="kind">Member</data>
+                                    <data key="label">angle</data>
+                                    <data key="inner_type">Double</data>
+                                    <data key="icon_prefix">Icons</data>
+                                    <data key="icon">clockCycle</data>
+                                    <data key="description">TODO</data>
+                                </node>	
+														
+                            </graph>
+                        </node>
+						
+                    </graph>
+                </node>
+
+			    <node id="optronicsworker::NewImage">			
+                    <data key="kind">Function</data>
+                    <data key="label">New Image</data>
+                    <data key="operation">NewImage</data>
+                    <data key="description">TODO</data>
+                    <data key="icon_prefix">Icons</data>
+                    <data key="icon">cpu</data>
+                    <graph id="optronicsworker::NewImage:">
+						<node id="optronicsworker::NewImage::in">
+                            <data key="kind">InputParameterGroup</data>
+                            <graph id="optronicsworker::NewImage::in:">    
+								<node id="optronicsworker::NewImage::in::ImgResolutionX">
+									<data key="index">0</data>
+                                    <data key="kind">Member</data>
+                                    <data key="label">NI_ImgResolutionX</data>
+                                    <data key="inner_type">Integer</data>
+                                    <data key="icon_prefix">Icons</data>
+                                    <data key="icon">clockCycle</data>
+                                    <data key="description">TODO</data>
+                                </node>	
+   
+								<node id="optronicsworker::NewImage::in::ImgResolutionY">
+									<data key="index">1</data>
+                                    <data key="kind">Member</data>
+                                    <data key="label">NI_ImgResolutionY</data>
+                                    <data key="inner_type">Integer</data>
+                                    <data key="icon_prefix">Icons</data>
+                                    <data key="icon">clockCycle</data>
+                                    <data key="description">TODO</data>
+                                </node>	
+   
+								<node id="optronicsworker::NewImage::in::NumofFeaturesColour">
+									<data key="index">2</data>
+                                    <data key="kind">Member</data>
+                                    <data key="label">NI_NumofFeaturesColour</data>
+                                    <data key="inner_type">Integer</data>
+                                    <data key="icon_prefix">Icons</data>
+                                    <data key="icon">clockCycle</data>
+                                    <data key="description">TODO</data>
+                                </node>	
+   
+								<node id="optronicsworker::NewImage::in::NumofFeaturesGradient">
+									<data key="index">3</data>
+                                    <data key="kind">Member</data>
+                                    <data key="label">NI_NumofFeaturesGradient</data>
+                                    <data key="inner_type">Integer</data>
+                                    <data key="icon_prefix">Icons</data>
+                                    <data key="icon">clockCycle</data>
+                                    <data key="description">TODO</data>
+                                </node>	
+   
+								<node id="optronicsworker::NewImage::in::TargetImgWidth">
+									<data key="index">4</data>
+                                    <data key="kind">Member</data>
+                                    <data key="label">NI_TargetImgWidth</data>
+                                    <data key="inner_type">Integer</data>
+                                    <data key="icon_prefix">Icons</data>
+                                    <data key="icon">clockCycle</data>
+                                    <data key="description">TODO</data>
+                                </node>	
+   
+			
+                            </graph>
+                        </node>					
+				
+                    </graph>
+                </node>
+
+			    <node id="optronicsworker::ClearImage">			
+                    <data key="kind">Function</data>
+                    <data key="label">Clear Image</data>
+                    <data key="operation">ClearImage</data>
+                    <data key="description">TODO</data>
+                    <data key="icon_prefix">Icons</data>
+                    <data key="icon">cpu</data>
+                    <graph id="optronicsworker::ClearImage:">
+						
+                    </graph>
+                </node>
+
+
+			    <node id="optronicsworker::GenerateMeasurements">			
+                    <data key="kind">Function</data>
+                    <data key="label">Generate Measurement Set</data>
+                    <data key="operation">GenerateMeasurements</data>
+                    <data key="description">TODO</data>
+                    <data key="icon_prefix">Icons</data>
+                    <data key="icon">cpu</data>
+                    <graph id="optronicsworker::GenerateMeasurements:">
+
+
+						
+                    </graph>
+                </node>
+
+			    <node id="optronicsworker::NumofMeasurements">			
+                    <data key="kind">Function</data>
+                    <data key="label">Number of Measurements</data>
+                    <data key="operation">NumofMeasurements</data>
+                    <data key="description">TODO</data>
+                    <data key="icon_prefix">Icons</data>
+                    <data key="icon">cpu</data>
+                    <graph id="optronicsworker::NumofMeasurements:">
+
+						<node id="optronicsworker::NumofMeasurements::out">
+                            <data key="kind">ReturnParameterGroup</data>
+                            <graph id="optronicsworker::NumofMeasurements::out:">    
+								<node id="optronicsworker::NumofMeasurements::out::MeaValue">
+									<data key="index">2</data>
+                                    <data key="kind">Member</data>
+                                    <data key="label">SetSize</data>
+                                    <data key="inner_type">Integer</data>
+                                    <data key="icon_prefix">Icons</data>
+                                    <data key="icon">clockCycle</data>
+                                    <data key="description">TODO</data>
+                                </node>
+								
+								
+							</graph>
+                        </node>
+						
+                    </graph>
+                </node>
+
+			    <node id="optronicsworker::SetofMeasurement">			
+                    <data key="kind">Function</data>
+                    <data key="label">Output Measurement Details</data>
+                    <data key="operation">SetofMeasurement</data>
+                    <data key="description">TODO</data>
+                    <data key="icon_prefix">Icons</data>
+                    <data key="icon">cpu</data>
+                    <graph id="optronicsworker::SetofMeasurement:">
+					    <node id="optronicsworker::SetofMeasurement::in">
+                            <data key="kind">InputParameterGroup</data>
+                            <graph id="optronicsworker::SetofMeasurement::in:">    
+								<node id="optronicsworker::SetofMeasurement::in::Seti">
+									<data key="index">0</data>
+                                    <data key="kind">Member</data>
+                                    <data key="label">Seti</data>
+                                    <data key="inner_type">Integer</data>
+                                    <data key="icon_prefix">Icons</data>
+                                    <data key="icon">clockCycle</data>
+                                    <data key="description">TODO</data>
+                                </node>	
+								<node id="optronicsworker::SetofMeasurement::in::yi">								
+                                    <data key="index">1</data>
+                                    <data key="kind">Member</data>
+                                    <data key="label">yi</data>
+                                    <data key="inner_type">Integer</data>
+                                    <data key="icon_prefix">Icons</data>
+                                    <data key="icon">clockCycle</data>
+                                    <data key="description">TODO</data>
+                                </node>																
+                            </graph>
+                        </node>
+						<node id="optronicsworker::SetofMeasurement::out">
+                            <data key="kind">ReturnParameterGroup</data>
+                            <graph id="optronicsworker::SetofMeasurement::out:">    
+								<node id="optronicsworker::SetofMeasurement::out::MeaValue">
+									<data key="index">2</data>
+                                    <data key="kind">Member</data>
+                                    <data key="label">MeaValue</data>
+                                    <data key="inner_type">Double</data>
+                                    <data key="icon_prefix">Icons</data>
+                                    <data key="icon">clockCycle</data>
+                                    <data key="description">TODO</data>
+                                </node>
+								
+								
+							</graph>
+                        </node>
+						
+                    </graph>
+                </node>
+
+                
+				<node id="optronicsworker::runtest">
+                    <data key="kind">Function</data>
+                    <data key="label">This will process image and create measurements</data>
+                    <data key="operation">RunTest</data>
+                    <data key="description">TODO</data>
+                    <data key="icon_prefix">Icons</data>
+                    <data key="icon">cpu</data>
+                    <graph id="optronicsworker::runtest:">                       
+                    </graph>
+                </node>
+            
+			</graph>
+        </node>
+    </graph>
+</graphml>
