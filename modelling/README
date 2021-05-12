@@ -1,0 +1,1 @@
+The WorkerDefinitions directory contains graphml files telling MEDEA about the custom workers provided. The intention is that the WorkerDefinitions director can be copied directly to the MEDEA instalation directory on your local machine (not the server).
