@@ -87,6 +87,10 @@ Execute the medeaviz visualiser
 
 <H3>Step 12 - Execute models</H3>
 
+- you will need to point MEDEA at your jenkins environment
+- you will also need to reassign the assembly in the Hardware  view to match your local hardware configuration.
+- if successful, you should see state updates in the MEDEA console, depending on your log verbosity level
+
 
 <H3>Step 13</H3>Ensure the models are working by looking at the console or medeaviz
 
