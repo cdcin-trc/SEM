@@ -36,9 +36,13 @@ Configure your local graphml worker definitions according to that
 <H3>Step 9</H3>
 <H4> Step 9.1 </H4>
 Configure jenkins to add the deploy_worker task. 
+
 - copy the file SEM/jenkins/deploy_workers.groovy to the jenkinns server.
+
 - create a jenkins task
+
 - TODO how do we point this at the SEM git repo.
+
 <H4> Step 9.2 </H4>
 Execute the Jenkins deploy_worker job to compile the workers
 
