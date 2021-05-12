@@ -1,0 +1,3 @@
+This worker models an Adaptive Swarm Optimized Particle Filter. It also provides an example of how tio use the blas and cublas librarfies in a MEDEA Worker
+
+If this is your first experiment setting up some medea workers, It is advised that you void this model.
