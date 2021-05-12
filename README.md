@@ -70,13 +70,12 @@ Note: you should only need to perform this step once.
 <H4> Step 9.2 </H4>
 Execute the Jenkins deploy_worker job to compile the workers. This step should be repeated whenever you make changes to any of the workers in your git repo.
 
-<H3>Step 10Execute the Scenario Manager</H3>
+<H3>Step 10 - Execute the Scenario Manager</H3>
 
 
 This runs as a MEDEA model, so execute this from within MEDEA
 - you will need to point MEDEA at your jenkins environment
-- you will also need to 
-
+- you will also need to reassign the assembly in the Hardware  view to match your local hardware configuration.
 - if successful, you should see state updates in the MEDEA console, depending on your log verbosity level
 
 <H3>Step 11 - Run Medeaviz</H3>
@@ -86,12 +85,12 @@ Execute the medeaviz visualiser
   - a visual state update, showing surface/subsurface "contacts" moving, 
   - and the clock increasing
 
-<H3>Step 12</H3>
-Execute models
+<H3>Step 12 - Execute models</H3>
+
 
 <H3>Step 13</H3>Ensure the models are working by looking at the console or medeaviz
 
-<H3> Step 14 </H4>
+<H3> Step 14 - Advanced Model Configuration</H4>
 This is an optional step if you wish to attempt to run some of the advanced modesl such as the Adaptive Swarm Optimized Particle Filter. These models make use of heavily optimized libraries like blas and fftw, as well as their GPU equivalents cufft and cublas; to allow reliable comparison bewteen cpu and gpu performance. 
 
 Before executing these models you must install the third party libraries
