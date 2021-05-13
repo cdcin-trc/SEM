@@ -44,19 +44,19 @@ MEDEA models are usually primarily designed using the in-built visual language. 
   - AdaptiveSwarmOptimisedPartocleFilterWorker
 
 <H3>Step 6 - Update CMakeLists</H3>
-The /medeaworkers/deployment/CMakeLists.txt file configures which workers will be compiled and made available to the MEDEA models upon execution. Make changes to this file, commenting out workers you do not want to deploy, leaving only the workers you want to deploy.
+The <code>/medeaworkers/deployment/CMakeLists.txt</code> file configures which workers will be compiled and made available to the MEDEA models upon execution. Make changes to this file, commenting out workers you do not want to deploy, leaving only the workers you want to deploy.
 
 <H3>Step 7 - Push medeaworkers to git</H3>
-If you have changed the /medeaworkers/deployment/CMakeLists.txt, commit and push the changes via git to your repositry. This is needed for Jenkins in the next step.
+If you have changed the <code>/medeaworkers/deployment/CMakeLists.txt</code>, commit and push the changes via git to your repositry. This is needed for Jenkins in the next step.
 
 <H3>Step 8 - Update Local Worker Definition Files</H3>
-Copy the relevant graphml worker definitions from the \medeaworkers\modelling\WorkerDefinitions folder to your local MEDEA installation directory.
+Copy the relevant graphml worker definitions from the <code>/medeaworkers/modelling/WorkerDefinitions</code> folder to your local MEDEA installation directory.
 
 <H3>Step 9 - Deploy The Workers</H3>
 <H4>Step 9.1</H4>
 Configure Jenkins to add the deploy_worker task. 
 
-- copy the file SEM/jenkins/deploy_workers.groovy to the Jenkins server.
+- copy the file <code>SEM/jenkins/deploy_workers.groovy</code> to the Jenkins server.
 - create a Jenkins task
 - point the task at your MEDEA workers git repo
 
