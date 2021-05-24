@@ -1,5 +1,7 @@
 # System Execution Modelling (SEM)
 
+Software for modelling workloads and deploying executable models for distributed, real-time, embedded systems such as combat systems, avionics systems and automotive systems. 
+
 This repository contains sample models and visualisation software from the Centre for Defence Communications and Information Networking (CDCIN), at the University of Adelaide. This software is intended for use with the University of Adelaide's MEDEA/re software environment, created by the Centre for Distributed and Intelligent Technologies - Modelling and Analysis (CDIT-MA). MEDEA/re can be downloaded from the following github site:
 
 https://github.com/cdit-ma/SEM
